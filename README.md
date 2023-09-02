@@ -41,9 +41,9 @@ bootstrap check failure [1] of [1]: max virtual memory areas vm.max_map_count [6
 bootstrap check failure [1] of [1]: max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
 
 ### SOLLUTION:
+
 1- Open PowerShell
 2- Apply these two commands : 
         1) wsl -d docker-desktop
         2) sysctl -w vm.max_map_count=262144
 3- Run Again docker-compose up -d 
-        docker-compose up -d
