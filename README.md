@@ -7,7 +7,16 @@
 ##### Access web ui on http://localhost:9000
 ##### Login : admin Password : admin
 
+### DEBUG :
 
+- #####  Check logs of sonarqube server service
+
+    docker-compose logs -f server
+
+- #####  Check logs of sonarqube db service
+
+    docker-compose logs -f db
+    
 ### COMMON ERROR IF YOU ARE USING LINUX :
 bootstrap check failure [1] of [1]: max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
 
