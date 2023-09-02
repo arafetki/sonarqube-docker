@@ -43,7 +43,15 @@ bootstrap check failure [1] of [1]: max virtual memory areas vm.max_map_count [6
 ### SOLLUTION:
 
 1- Open PowerShell
+
 2- Apply these two commands : 
+
         1) wsl -d docker-desktop
+        
         2) sysctl -w vm.max_map_count=262144
-3- Run Again docker-compose up -d 
+        
+3- - Restart your SonarQube and PostgreSQL containers:
+
+        docker-compose down
+
+        docker-compose up -d
