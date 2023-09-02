@@ -37,6 +37,8 @@ bootstrap check failure [1] of [1]: max virtual memory areas vm.max_map_count [6
 - Restart your SonarQube and PostgreSQL containers:
 
         docker-compose down
+        
+        docker-compose up -d
 
 ### COMMON ERROR IF YOU ARE USING WINDOWS :
 
